@@ -25,8 +25,9 @@ jobs:
           working-directory: client
 
       - name: Build project
-        run: cd client
-        run: npm run build
+        run: |
+          cd client
+          npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
