@@ -33,6 +33,7 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
+    steps:  # This line was missing
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
